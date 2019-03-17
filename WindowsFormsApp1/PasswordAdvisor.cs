@@ -35,6 +35,7 @@ namespace WindowsFormsApp1
                 return false;
             }
 
+            // check if first and last characters are valid
             string firstLetter = password.Substring(0, 1);
             string lastLetter = password.Substring(password.Length - 1, 1);
 
@@ -44,11 +45,11 @@ namespace WindowsFormsApp1
                 {
                     valid = true;
                 }
-            }             
+            }
 
             return valid;
         }
-              
+
         public static bool PasswordDigitValid(string password)
         {
             bool valid = false;
@@ -78,7 +79,7 @@ namespace WindowsFormsApp1
         }
 
         public static bool PasswordLettersNumbersValid(string password)
-        { 
+        {
             bool valid = true;
 
             if (string.IsNullOrEmpty(password))
@@ -100,7 +101,7 @@ namespace WindowsFormsApp1
                     valid = false;
                 }
             }
-                   
+
             return valid;
         }
     }
