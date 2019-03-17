@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
         {
             bool valid = false;
 
+            // check if password length of password is between 3 and 8 characters
             if (password.Length >= 3 && password.Length <= 8)
                 valid = true;
 
