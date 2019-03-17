@@ -65,6 +65,7 @@ namespace WindowsFormsApp1
                 return false;
             }
 
+            // check for digits within the password string
             for (int i = 1; i < password.Length - 1; i++)
             {
                 char item = password[i];
